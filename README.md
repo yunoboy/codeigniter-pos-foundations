@@ -2,6 +2,10 @@
 
 A basic four-page Point-of-Sale website created with CodeIgniter 4.
 
+## Live Demo
+
+[Open the hosted POS application](https://codeigniter-pos-foundations.onrender.com/)
+
 ## Pages
 
 - Home
