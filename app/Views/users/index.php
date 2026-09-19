@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
     <title>Users - POS System</title>
 </head>
 <body>
     <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/customers">Customers</a>
-        <a href="/users">Users</a>
+<a href="<?= site_url('/') ?>">Home</a>
+<a href="<?= site_url('about') ?>">About</a>
+<a href="<?= site_url('customers') ?>">Customers</a>
+<a href="<?= site_url('users') ?>">Users</a>
     </nav>
 
     <h1>User Accounts</h1>
