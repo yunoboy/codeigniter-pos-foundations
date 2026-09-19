@@ -2,7 +2,7 @@ FROM php:8.2-apache
 
 RUN apt-get update \
     && apt-get install -y git unzip libicu-dev libonig-dev \
-    && docker-php-ext-install intl mbstring \
+    && docker-php-ext-install intl mbstring mysqli \
     && a2enmod rewrite \
     && sed -ri 's/AllowOverride None/AllowOverride All/g' /etc/apache2/apache2.conf
 

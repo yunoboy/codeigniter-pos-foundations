@@ -13,7 +13,23 @@ A basic four-page Point-of-Sale website created with CodeIgniter 4.
 - Customer Accounts
 - User Accounts
 
-The Customer Accounts and User Accounts pages display sample records stored in static PHP arrays. No database is used in this version.
+## Database Setup
+
+1. Create a MySQL database named `pos_foundations`.
+2. Import `database/pos_foundations.sql`.
+3. Copy or rename `env` to `.env`.
+4. Configure the database connection in `.env`:
+
+   database.default.hostname = localhost
+   database.default.database = pos_foundations
+   database.default.username = root
+   database.default.password =
+   database.default.DBDriver = MySQLi
+   database.default.port = 3306
+
+5. Start the application:
+
+   php spark serve
 
 ## Requirements
 
