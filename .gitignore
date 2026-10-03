@@ -60,6 +60,10 @@ Vagrantfile
 /writable/uploads/*
 !/writable/uploads/index.html
 
+# Keep prepared public avatar uploads out of Git, but retain the placeholder.
+/public/uploads/avatars/*
+!/public/uploads/avatars/placeholder.svg
+
 /writable/debugbar/*
 !/writable/debugbar/index.html
 

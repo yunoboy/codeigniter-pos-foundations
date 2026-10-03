@@ -16,12 +16,21 @@
 
     <h1>Customer Accounts</h1>
 
-    <table border="1" cellpadding="8">
+    <div class="page-actions">
+        <a class="button" href="<?= site_url('customers/new') ?>">New Customer</a>
+    </div>
+
+    <?php if (! empty($success)): ?>
+        <p class="alert alert-success"><?= esc($success) ?></p>
+    <?php endif; ?>
+
+    <table>
         <thead>
             <tr>
                 <th>Full Name</th>
                 <th>Email</th>
                 <th>Phone</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -30,6 +39,7 @@
                     <td><?= esc($customer['full_name']) ?></td>
                     <td><?= esc($customer['email']) ?></td>
                     <td><?= esc($customer['phone']) ?></td>
+                    <td><a class="text-link" href="<?= site_url('customers/' . $customer['id'] . '/edit') ?>">Edit</a></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>

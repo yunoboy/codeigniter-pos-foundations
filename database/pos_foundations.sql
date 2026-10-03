@@ -16,6 +16,7 @@ CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) NOT NULL UNIQUE,
     full_name VARCHAR(100) NOT NULL,
+    avatar VARCHAR(255) NULL,
     created_at DATETIME NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -26,11 +27,11 @@ INSERT INTO customers (full_name, email, phone, created_at) VALUES
 ('Carlo Mendoza', 'carlo@example.com', '09201234567', '2026-09-04 12:00:00'),
 ('Sofia Garcia', 'sofia@example.com', '09211234567', '2026-09-05 13:00:00');
 
-INSERT INTO users (username, full_name, created_at) VALUES
-('admin', 'System Administrator', '2026-09-01 09:00:00'),
-('maria', 'Maria Santos', '2026-09-02 10:00:00'),
-('juan', 'Juan Dela Cruz', '2026-09-03 11:00:00'),
-('angela', 'Angela Reyes', '2026-09-04 12:00:00'),
-('carlo', 'Carlo Mendoza', '2026-09-05 13:00:00');
+INSERT INTO users (username, full_name, avatar, created_at) VALUES
+('admin', 'System Administrator', NULL, '2026-09-01 09:00:00'),
+('maria', 'Maria Santos', NULL, '2026-09-02 10:00:00'),
+('juan', 'Juan Dela Cruz', NULL, '2026-09-03 11:00:00'),
+('angela', 'Angela Reyes', NULL, '2026-09-04 12:00:00'),
+('carlo', 'Carlo Mendoza', NULL, '2026-09-05 13:00:00');
 
 SET FOREIGN_KEY_CHECKS = 1;
