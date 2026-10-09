@@ -12,6 +12,7 @@
 <a href="<?= site_url('about') ?>">About</a>
 <a href="<?= site_url('customers') ?>">Customers</a>
 <a href="<?= site_url('users') ?>">Users</a>
+<a href="<?= site_url('logout') ?>">Logout</a>
     </nav>
 
     <h1>Customer Accounts</h1>

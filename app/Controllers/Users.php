@@ -55,6 +55,7 @@ class Users extends BaseController
             ]);
         }
 
+        $user['password'] = password_hash('password', PASSWORD_DEFAULT);
         $user['created_at'] = date('Y-m-d H:i:s');
         (new UserModel())->insert($user);
 
